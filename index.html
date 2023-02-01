@@ -6,14 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="buttons.css">
 </head>
 <body>
     <!-- Score Section -->
     <div class="box score">
-        <div class="score user">userScore</div>
-        <div class="score separator">-</div>
-        <div class="score computer">computerScore</div>
+        <div class="userScore">
+            <div id="userScore">2</div>
+            <div>You</div>
+        </div>
+        <div class="separator">
+            <div>-</div>
+        </div>
+        
+        
+        <div class="computerScore">
+            <div id="computerScore">1</div>
+            <div>Computer</div>
+        </div>
+        
     </div>
+    
 
     <!-- Images display section -->
     <div class="game-screen">
@@ -34,13 +47,14 @@
     </div>
 
     <!-- Buttons display -->
-    <div class="upper buttons">
+    <div class="buttons">
         <button class="btn rock">Rock</button>
+        <button class="btn paper">Paper</button>
+        <button class="btn scissors">Scissors</button>
         
     </div>
     <div class="lower buttons">
-        <button class="btn paper">Paper</button>
-        <button class="btn scissors">Scissors</button>
+        
     </div>
 
     <script src="./rockPaperScissors.js"></script>
