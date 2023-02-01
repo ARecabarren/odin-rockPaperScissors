@@ -8,13 +8,30 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
+    <!-- Score Section -->
     <div class="box score">
-        <div class="score user">2</div>
+        <div class="score user">userScore</div>
         <div class="score separator">-</div>
-        <div class="score computer">0</div>
+        <div class="score computer">computerScore</div>
     </div>
-    
+
+    <!-- Images display section -->
+    <div class="game-screen">
+        <div class="user-choice">
+            <img class="choice" src="./images/user-paper.png" alt="" srcset="">
+        </div>
+        <div class="title">
+            <img id="title" src="./images/title.png" alt="" srcset="">
+        </div>
+        <div class="computer-choice">
+            <img class="choice" src="./images/computer-rock.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <!-- Display result secction -->
+    <div id="result">
+        You win!
+    </div>
 
     <script src="./rockPaperScissors.js"></script>
 </body>
