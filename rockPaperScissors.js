@@ -21,6 +21,7 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
+    console.log('Starting a round')
     // Take player selection and make it case-insensitive
     playerSelection = playerSelection.toLowerCase()
     // Define winner
@@ -104,7 +105,12 @@ function game() {
 let buttons = Array.from(document.querySelectorAll('button')); 
 
 for(let btn of buttons){
-    btn.addEventListener('click',() => {console.log(`I'm the ${btn.textContent} button`)})
+    // btn.addEventListener('click',() => {console.log(`I'm the ${btn.textContent} button`)})
+    
+    btn.addEventListener('click',() =>{
+        let cpuChoice = getComputerChoice();
+        playRound(btn.textContent,cpuChoice)
+    })
     console.log(btn)
 }
 
