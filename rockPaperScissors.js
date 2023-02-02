@@ -100,3 +100,21 @@ function game() {
         console.log("It's a tie!")
     }
 }
+
+let buttons = Array.from(document.querySelectorAll('button')); 
+
+for(let btn of buttons){
+    btn.addEventListener('click',() => {console.log(`I'm the ${btn.textContent} button`)})
+    console.log(btn)
+}
+
+// buttons.forEach(button => {
+//     // console.log(`button  ${button.textContent}`);
+//     let computer = getComputerChoice()
+//     let user = button.textContent
+//     button.addEventListener('click',playRound(user,computer))
+// })
+
+
+// rock.addEventListener('click',playRound(rock.textContent,getComputerChoice()))
+
