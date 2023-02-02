@@ -103,13 +103,14 @@ function game() {
 }
 
 let buttons = Array.from(document.querySelectorAll('button')); 
-
+let display = document.querySelector('#result')
 for(let btn of buttons){
     // btn.addEventListener('click',() => {console.log(`I'm the ${btn.textContent} button`)})
     
     btn.addEventListener('click',() =>{
         let cpuChoice = getComputerChoice();
-        playRound(btn.textContent,cpuChoice)
+        display.textContent = playRound(btn.textContent,cpuChoice)
+
     })
     console.log(btn)
 }
