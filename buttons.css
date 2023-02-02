@@ -7,6 +7,33 @@
     text-decoration: none;
     background-color: rgb(206, 29, 64);
     box-shadow: 0 8px rgb(167, 10, 10);
-
+}
+.btn:hover{
+    box-shadow: 0 6px rgb(167, 10, 10);
+    top: 2px;
 }
 
+.btn:active {
+    box-shadow: 0 0px rgb(167, 10, 10);
+    top: 8px;
+  }
+
+.btn:focus {
+    outline: 0;	
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upButtons,.downButtons{
+    display: flex;
+    justify-content: center ;
+}
+
+.btn{
+    margin: 5px 8px;
+    width: 8rem;
+}

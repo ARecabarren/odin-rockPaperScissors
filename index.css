@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Play|Oxygen:400,700,300);
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+    /* border: 2px solid green; */
+    padding: 2%;
+    font-family: 'Play', Courier, monospace;
+}
+
+.userScore,.computerScore,.separator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    /* border: 1px solid red; */
+}
+#userScore,#computerScore{
+    margin: 10%;
+}
+
+.game-screen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    /* border: 1px solid green; */
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.choice{
+    border-radius: 0.5rem;
+}
+#title{
+    width: 65%;
+}
+#result{
+    font-family: 'Play', Courier, monospace;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    /* border: 1px solid green; */
+}
+
+
+
