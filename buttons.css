@@ -36,4 +36,6 @@
 .btn{
     margin: 5px 8px;
     width: 8rem;
+    font-family: 'Play', Courier, monospace;
+    font-size: 1rem;
 }
