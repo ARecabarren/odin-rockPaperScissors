@@ -21,9 +21,11 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    console.log('Starting a round')
+    // console.log('Starting a round')
     // Take player selection and make it case-insensitive
-    playerSelection = playerSelection.toLowerCase()
+    let playerSelection = playerSelection.toLowerCase(),
+        wins;
+
     // Define winner
     // Compare playerSelection with computer Selection
     switch (playerSelection) {
@@ -34,21 +36,29 @@ function playRound(playerSelection, computerSelection) {
         case "rock": // if player choose rock
             //computerSelection is paper? player wins
             if (computerSelection == 'Scissors') {
-                return `You win! ${playerSelection} beats ${computerSelection}`;
-                break;
-            } else {return `You lose! ${computerSelection} beats ${playerSelection}`};
-            break;
-        case "paper": // if player choose paper
-            if (computerSelection == 'Rock') {
-                return `You win! ${playerSelection} beats ${computerSelection}`;
-                break;
-            } else {return `You lose! ${computerSelection} beats ${playerSelection}`};
-            break;
-        case "scissors": // if player choose scissors
-            if (computerSelection == 'Paper') {
+                wins = true;
                 return `You win! ${playerSelection} beats ${computerSelection}`;
                 break;
             } else {
+                wins = false
+                return `You lose! ${computerSelection} beats ${playerSelection}`};
+            break;
+        case "paper": // if player choose paper
+            if (computerSelection == 'Rock') {
+                wins = true;
+                return `You win! ${playerSelection} beats ${computerSelection}`;
+                break;
+            } else {
+                wins = false
+                return `You lose! ${computerSelection} beats ${playerSelection}`};
+            break;
+        case "scissors": // if player choose scissors
+            if (computerSelection == 'Paper') {
+                wins = true;
+                return `You win! ${playerSelection} beats ${computerSelection}`;
+                break;
+            } else {
+                wins = false
                 return `You lose! ${computerSelection} beats ${playerSelection}`
             };
             break;
@@ -71,8 +81,11 @@ function playRound(playerSelection, computerSelection) {
 
 function game() {
     
+
     let playerRecord = 0, 
         computerRecord = 0;
+
+
     for (let i = 0; i < 5; i++) {
         //Get player weapons
         let playerSelection = prompt("Choose your weapons: ").toLowerCase();
@@ -102,8 +115,8 @@ function game() {
     }
 }
 
-let buttons = Array.from(document.querySelectorAll('button')); 
-let display = document.querySelector('#result')
+let buttons = Array.from(document.querySelectorAll('button')),
+    display = document.querySelector('#result')
 for(let btn of buttons){
     // btn.addEventListener('click',() => {console.log(`I'm the ${btn.textContent} button`)})
     

@@ -48,5 +48,8 @@
     /* border: 1px solid green; */
 }
 
+.hidden{
+    visibility: hidden;
+}
 
 

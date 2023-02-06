@@ -12,16 +12,16 @@
     <!-- Score Section -->
     <div class="box score">
         <div class="userScore">
-            <div id="userScore">2</div>
+            <div id="userScore">0</div>
             <div>You</div>
         </div>
-        <div class="separator">
-            <div>-</div>
+        <div class="round">
+            <div></div>
         </div>
         
         
         <div class="computerScore">
-            <div id="computerScore">1</div>
+            <div id="computerScore">0</div>
             <div>Computer</div>
         </div>
         
@@ -43,25 +43,32 @@
 
     <!-- Display result secction -->
     <div id="result">
-        You win!
+        Pick your weapon
+    </div>
+
+    <!-- Game start -->
+    <div style="display: flex; justify-content: center;">
+        <button id="startButton" class="btn">
+            Start
+        </button>
     </div>
 
     <!-- Buttons display -->
-    <div class="buttons">
+    <div class="buttons hidden">
         <div class="upButtons">
-            <button class="btn paper">Rock</button>
+            <button class="btn play">Rock</button>
         </div>
         
         <div class="downButtons">
-            <button class="btn rock">Paper</button>
-            <button class="btn scissors">Scissors</button>
+            <button class="btn play">Paper</button>
+            <button class="btn play">Scissors</button>
         </div>
         
     </div>
     <div class="lower buttons">
-        
+        <button class="btn hidden" id="replayButton" style="background-color: gold;">Play Again</button>
     </div>
 
-    <script src="./rockPaperScissors.js"></script>
+    <script src="./rpsGame.js"></script>
 </body>
 </html>
